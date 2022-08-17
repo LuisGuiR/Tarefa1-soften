@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.banner-home {
+  width: 100%;
+  height: 100vh;
+  background: url(/arquivos/imagens/Fundo-tela-inicial.png);
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.banner-home header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 91.5%;
+  height: 115px;
+}
+.banner-home .navegacao {
+  width: 470px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-home .navegacao .item-navegacao {
+  color: #fff;
+  text-decoration: none;
+}
+.banner-home .navegacao .item-navegacao:not(.item-navegacao:last-child):hover {
+  text-decoration: underline;
+}
+.banner-home .navegacao .item-navegacao:last-child {
+  width: 155px;
+  background-color: #524ebf;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 16px;
+}/*# sourceMappingURL=main.css.map */
