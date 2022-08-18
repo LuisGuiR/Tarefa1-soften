@@ -7,23 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produto Soften | Aula 1</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
-    <link rel="stylesheet" href="/arquivos/sass/main.css">
+    <link rel="stylesheet" href="/source/sass/main.css">
+    <link rel="icon" href="/source/pictures/logo-soften-branco.png">
 </head>
 
 <body>
+    <div id="mask" class="mask" onclick="closeDialog()"></div>
+    <div id="dialog" class="dialog">
+        <span class="close-dialog" onclick="closeDialog()">X</span>
+        <div class="dialog-content">
+            <form action="">
+                <p class="dialog-content__titulo">Fale Conosco</p>
+                <div class="dialog-content__item">
+                    <input class="content-item__input" type="text" name="inputText" id="inputText" placeholder="Texto *">
+                </div>
+                <div class="dialog-content__item">
+                    <input class="content-item__input" type="email" name="inputEmail" id="inputEmail" placeholder="Email *">
+                </div>
+                <div class="dialog-content__item">
+                    <input class="content-item__input" type="password" name="inputPassword" id="inputPassword" placeholder="Senha *">
+                </div>
+                <p class="dialog-content__btn" onclick="closeDialog()">Salvar</p>
+            </form>
+        </div>
+    </div>
     <section class="banner-home">
         <header>
-            <a class="imagem-cabecalho" href="#">
-                <img src="/arquivos/imagens/logo-soften-branco.png" width="120px" alt="Logo da sotfen sistemas branco">
+            <a class="picture-header" href="#">
+                <img src="/source/pictures/logo-soften-branco.png" width="120px" alt="Logo da sotfen sistemas branco">
             </a>
-            <nav class="navegacao">
-                <a class="item-navegacao" href="#">Home</a>
-                <a class="item-navegacao" href="#">Vantagens</a>
-                <a class="item-navegacao" href="#">Preços</a>
-                <a class="item-navegacao" onclick="openDialog()" href="#">Fale Conosco</a>
+            <nav class="navigation">
+                <a class="item-navigation" href="#">Home</a>
+                <a class="item-navigation" href="#">Vantagens</a>
+                <a class="item-navigation" href="#">Preços</a>
+                <a class="item-navigation" onclick="openDialog()" href="#">Fale Conosco</a>
             </nav>
         </header>
     </section>
+    <script src="/source/js/script.js"></script>
 </body>
-
 </html>

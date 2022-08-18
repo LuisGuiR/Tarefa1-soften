@@ -1,6 +1,3 @@
-$primary-color: #392c9e;
-$secundary-color: #524ebf;
-$text-color: #fff;
 
 @mixin flex($hasmargin) {
     display: flex;
@@ -20,7 +17,7 @@ $text-color: #fff;
 .banner-home {
     width: 100%;
     height: 100vh;
-    background: url(/arquivos/imagens/Fundo-tela-inicial.png);
+    background: url(/source/pictures/Fundo-tela-inicial.png);
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
 
@@ -29,23 +26,23 @@ $text-color: #fff;
         width: 91.5%;
         height: 115px;
     }
-    .navegacao {
+    .navigation {
         width: 470px;
         line-height: 40px;
         @include flex(false);
 
-        .item-navegacao {
+        .item-navigation {
             color: $text-color;
             text-decoration: none;
 
-            &:not(.item-navegacao:last-child) {
+            &:not(.item-navigation:last-child) {
                 &:hover {
                     text-decoration: underline;
                 }
             }
         }
 
-        .item-navegacao:last-child {
+        .item-navigation:last-child {
             width: 155px;
             background-color: rgba($secundary-color, 1);
             text-align: center;
